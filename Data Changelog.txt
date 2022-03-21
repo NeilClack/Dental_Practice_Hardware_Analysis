@@ -1,0 +1,10 @@
+- Copied all data sources to xlsx sheets. All original csv data remains intact and untouched
+- Renamed datetime column to DateTime
+- Moved each data collector source to a separate table with the name of the collector source.
+- Removed PC name and unnecessary collector information from headings. i.e. \\FRONT2A\Event Tracing for Windows\Total Memory Usage --- Non-Paged Pool
+ to Total Memory Usage --- Non-Paged Pool with the sheet name of Event Tracing for Windows
+- Repeated all above steps for all four data sources.
+
+- Removed the unrecorded "Networking and Network Interface data"
+- Split date and time in PowerBi as this leads to an easier split than Excel. (Results in 2 columns in two steps rather than 4 columns in 4 steps.)
+- Changed all counter data from float to integer. While a decimal calculation for X/second is valid, with this amount of data and the granularity being analyzed, having 3.99 faults per second is best represented by 4 instead.
