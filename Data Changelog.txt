@@ -1,5 +1,12 @@
 - Copied all data files to a new directory "../data_copies/*_original_copy.csv"
 - Converted datetime in Excel. Excel is the easiest way to convert the stored PerfMon datetime data from it's native format to a useable, human readable date format. New human readable format is in "mm/dd/yyyy hh:mm:ss"
 - Renamed Date column to read "datetime"
+- Removed \\<computer name>\ from column headers
+- Utilized Excel power query to split datetime into date and time columns
+- Converted time to 24hr hh:mm:ss format
+- Saved data as xlsx to store formatting
 
 *server01 data is missing the correct datetime. I have reached out to the IT representative to obtain fresh copies of this data. It is yet to be determined if this data was stored this way by the computer or if something happened in the transportation of data to cause corruption. Dates and times do not match the date/time of collection. ~3/22/2022 - Neil
+
+- Power Bi: Split datetime column into Date and Time, renamed columns respectively
+- Power Bi: Converted data from text to whole number types.
